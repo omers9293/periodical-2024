@@ -249,7 +249,7 @@ body
 
 .footerList
 {   color: #CFCEEB;
-    list-style: url('../src/water-favicon-reduced.png');
+    list-style: url('src/water-favicon-reduced.png');
 }
 
 
