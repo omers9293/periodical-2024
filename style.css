@@ -80,6 +80,18 @@ body
     z-index: 1;
 }
 
+#sectionHeaderH1
+{   font-family: 'Oswald', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 3px #CFCEEB;
+    letter-spacing: 6px;
+    font-size: 72px;
+    animation: fadein 2s;
+    user-select: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 #headerH2
 {   font-family: 'Oswald', sans-serif;
     color: #CFCEEB;
@@ -266,6 +278,12 @@ body
     {   font-size: 64px;
         -webkit-text-stroke: 3px #CFCEEB;
         letter-spacing: 3px;
+    }
+
+    #sectionHeaderH1
+    {   font-size: 48px;
+        -webkit-text-stroke: 2px #CFCEEB;
+        letter-spacing: 2px;
     }
 
     .card
