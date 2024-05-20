@@ -280,15 +280,15 @@ body
         letter-spacing: 2px;
     }
 }
-
+ ------------------------
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #A3C3D9;
 }
 header {
-    background-color: #333;
+    background-color: #A3C3D9;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -299,7 +299,7 @@ header {
     padding: 0 20px;
 }
 .post {
-    background: #fff;
+    background: #A3C3D9;
     margin-bottom: 20px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -318,12 +318,12 @@ header {
     margin: 0;
 }
 .post-meta {
-    color: #888;
+    color: #A3C3D9;
     font-size: 0.9rem;
     margin: 10px 0;
 }
 footer {
-    background-color: #333;
+    background-color: #A3C3D9;
     color: #fff;
     text-align: center;
     padding: 10px 0;
