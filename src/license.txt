@@ -1,0 +1,11 @@
+Model Information:
+* title:	Water Molecule
+* source:	https://sketchfab.com/3d-models/water-molecule-712d30117a7d41ccb1f79a1355b69864
+* author:	vishalbhoir (https://sketchfab.com/vishalbhoir)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Water Molecule" (https://sketchfab.com/3d-models/water-molecule-712d30117a7d41ccb1f79a1355b69864) by vishalbhoir (https://sketchfab.com/vishalbhoir) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
