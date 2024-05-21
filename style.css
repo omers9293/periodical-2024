@@ -297,7 +297,7 @@ body
     font-size: 20px; /* optional: you can adjust the font size */
 }
 
-grid-container {
+.grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -305,7 +305,10 @@ grid-container {
 .grid-item {
     position: relative;
     overflow: hidden;
+    text-align: left; /* Aligns the content to the left */
 }
 .grid-item img {
     max-width: 100%;
-    display: block;
+    width: 100%; 
+    height: auto;
+}
