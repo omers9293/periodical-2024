@@ -300,15 +300,16 @@ body
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 5px;
 }
 .grid-item {
     position: relative;
     overflow: hidden;
-    text-align: left; /* Aligns the content to the left */
 }
 .grid-item img {
-    max-width: 100%;
-    width: 100%; 
-    height: auto;
+    max-width: 50%; /* Ensures the image does not exceed the width of its container */
+    height: auto; /* Maintains the aspect ratio */
+    width: 30%; /* Adjust the width as needed */
+    display: block; /* Ensures the image is displayed as a block element */
+    margin-left: 10px; /* Add some left margin for spacing */
 }
