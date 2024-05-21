@@ -81,6 +81,17 @@ body
     z-index: 1;
 }
 
+#sectionHeaderH1
+{   font-family: 'Oswald', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 3px #CFCEEB;
+    letter-spacing: 5px;
+    font-size: 72px;
+    animation: fadein 2s;
+    user-select: none;
+    text-transform: uppercase;
+}
+
 #headerH2
 {   font-family: 'Oswald', sans-serif;
     color: #CFCEEB;
@@ -225,7 +236,7 @@ body
 }
 
 #aboutUsCardHeading
-{   font-family: 'Oswald', sans-serif; 
+{   font-family: 'Oswald', sans-serif;
     text-align: center;
     font-size: 1.25rem;
     color: #CFCEEB;
