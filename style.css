@@ -313,6 +313,6 @@ body
     display: block; /* Ensures the image is displayed as a block element */
 }
 .text {
-    text-align: center;
-    
+    text-align: right;
+
 }
