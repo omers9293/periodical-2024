@@ -86,12 +86,19 @@ body
 {   font-family: 'Oswald', sans-serif;
     color: transparent;
     -webkit-text-stroke: 3px #CFCEEB;
+<<<<<<< HEAD
     letter-spacing: 6px;
+=======
+    letter-spacing: 5px;
+>>>>>>> austin
     font-size: 72px;
     animation: fadein 2s;
     user-select: none;
     text-transform: uppercase;
+<<<<<<< HEAD
     text-align: center;
+=======
+>>>>>>> austin
 }
 
 #headerH2
@@ -241,7 +248,7 @@ body
 }
 
 #aboutUsCardHeading
-{   font-family: 'Oswald', sans-serif; 
+{   font-family: 'Oswald', sans-serif;
     text-align: center;
     font-size: 1.25rem;
     color: #CFCEEB;
