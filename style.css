@@ -308,9 +308,9 @@ body
     overflow: hidden;
 }
 .grid-item img {
-    max-width: 100%; /* Ensures the image does not exceed the width of its container */
-    height: auto; /* Maintains the aspect ratio */
-    display: block; /* Ensures the image is displayed as a block element */
+    max-width: 100%;
+    height: auto; 
+    display: block;
 }
 .text {
     text-align: right;
