@@ -299,18 +299,16 @@ body
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    grid-template-columns: repeat(2, minmax(50px, 1fr)); /* Adjust the minimum and maximum width of the columns */
+    gap: 5px; /* Reduced the gap between grid items to 5px */
+    max-width: 400px; /* Limit the width of the grid container */
 }
 .grid-item {
     position: relative;
     overflow: hidden;
 }
 .grid-item img {
-    max-width: 50%; /* Ensures the image does not exceed the width of its container */
+    max-width: 100%; /* Ensures the image does not exceed the width of its container */
     height: auto; /* Maintains the aspect ratio */
-    width: 30%; /* Adjust the width as needed */
     display: block; /* Ensures the image is displayed as a block element */
-    margin-left: 10px; /* Add some left margin for spacing */
-    display: flex;
 }
