@@ -313,5 +313,6 @@ body
     display: block; /* Ensures the image is displayed as a block element */
 }
 .text {
-    margin-left: 200px; /* Adjust the margin as needed */
+    text-align: center;
+    
 }
