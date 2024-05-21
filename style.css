@@ -296,3 +296,16 @@ body
     font-family: 'Roboto', sans-serif;
     font-size: 20px; /* optional: you can adjust the font size */
 }
+
+grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+.grid-item img {
+    max-width: 100%;
+    display: block;
