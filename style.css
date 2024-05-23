@@ -400,6 +400,12 @@ body
     text-align: center;
     font-family: 'Oswald', sans-serif;
 }
+#imageHolder {
+    width: 100vw;
+    height: 25vh;
+    object-fit: cover;
+    object-position: top;
+}
 
 @media screen and (max-width: 512px)
 {   #headerH1
