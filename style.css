@@ -20,7 +20,7 @@ body
     padding: 0;
 }
 
-.paragraphText, p
+.paragraphText
 {   font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
     color: #7d7d7d;
