@@ -189,6 +189,12 @@ body
     background-size: cover;
 }
 
+#section3HeaderWrapper
+{   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('src/canal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .sectionContent
 {   width: 90%;
     margin-left: auto;
