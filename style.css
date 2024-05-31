@@ -162,7 +162,9 @@ body
 }
 
 .card:hover
-{   animation: popout 0.3s forwards;   }
+{   animation: popout 0.3s forwards;
+    filter: brightness(110%);
+}
 
 .sectionHeader
 {   font-family: 'Oswald', sans-serif;
@@ -175,10 +177,48 @@ body
     color: #2d2d2d;
 }
 
+#section1HeaderWrapper
+{   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('src/ocean.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section2HeaderWrapper
+{   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('src/watermoleculebg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section3HeaderWrapper
+{   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('src/canal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .sectionContent
 {   width: 90%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.sectionLinkText
+{   font-family: 'Oswald', sans-serif;
+    color: #17166E;
+    text-align: center;
+    font-size: 2em;
+}
+
+.sectionLinkText:hover
+{   animation: popout 0.3s forwards;
+    font-weight: bold;
+}
+
+.sectionLinkContainer
+{   column-gap: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    justify-content: space-evenly;
 }
 
 .cardLine
@@ -198,6 +238,8 @@ body
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
     user-select: none;
+    object-fit: cover;
+    object-position: 50% 50%;
     /* border-radius: 5px; */
 }
 
