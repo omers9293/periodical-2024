@@ -467,6 +467,12 @@ body
     margin-right: auto;
 }
 
+.articleSubHeader
+{   color: #0D0D3D;
+    font-size: 1.45em;
+    font-family: 'Oswald', sans-serif;
+}
+
 #imageHolder {
     width: 100vw;
     height: 25vh;
