@@ -20,7 +20,7 @@ body
     padding: 0;
 }
 
-.paragraphText, p
+.paragraphText
 {   font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
     color: #7d7d7d;
@@ -114,9 +114,27 @@ body
 {   background-color: #CFCEEB;
     width: 100%;
     height: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contentLine
+{   width: 85%;
+    color: #17166E;
+    border: 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contentH2
+{   font-family: 'Oswald', sans-serif;
+    color: #17166E;
+    font-size: 2.25em;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 #articleContainer
@@ -125,6 +143,7 @@ body
     max-width: 85%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 25px;
     column-gap: 25px;
     row-gap: 50px;
     padding: 25px;
@@ -143,7 +162,9 @@ body
 }
 
 .card:hover
-{   animation: popout 0.3s forwards;   }
+{   animation: popout 0.3s forwards;
+    filter: brightness(110%);
+}
 
 .sectionHeader
 {   font-family: 'Oswald', sans-serif;
@@ -156,10 +177,48 @@ body
     color: #2d2d2d;
 }
 
+#section1HeaderWrapper
+{   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('src/ocean.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section2HeaderWrapper
+{   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('src/watermoleculebg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section3HeaderWrapper
+{   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('src/canal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .sectionContent
 {   width: 90%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.sectionLinkText
+{   font-family: 'Oswald', sans-serif;
+    color: #17166E;
+    text-align: center;
+    font-size: 2em;
+}
+
+.sectionLinkText:hover
+{   animation: popout 0.3s forwards;
+    font-weight: bold;
+}
+
+.sectionLinkContainer
+{   column-gap: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    justify-content: space-evenly;
 }
 
 .cardLine
@@ -179,6 +238,8 @@ body
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
     user-select: none;
+    object-fit: cover;
+    object-position: 50% 50%;
     /* border-radius: 5px; */
 }
 
@@ -245,7 +306,7 @@ body
 
 .aboutUsCardHeading
 {   font-family: 'Oswald', sans-serif;
-    /* text-align: center; */
+    text-align: center;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -257,8 +318,7 @@ body
 .aboutUsCardImg
 {   max-width: 60%;
     border-radius: 3px;
-    margin-left: auto;
-    margin-right: auto;
+    border: solid 3px #CFCEEB;
 }
 
 .aboutUsCardLine
@@ -269,7 +329,7 @@ body
 }
 
 .aboutUsCardContent {
-    /* text-align: center; */
+    text-align: center;
     word-wrap: break-word;
     width: 90%;
     margin-left: auto;
@@ -338,7 +398,7 @@ body
 {   display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 300px 1fr;
-    width: 95%;
+    max-width: 95%;
     margin-left: auto;
     margin-right: auto;
     column-gap: 10px;
@@ -361,7 +421,7 @@ body
 #articleHeading
 {   font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
-    font-size: 36px;
+    font-size: 2.5em;
     text-align: center;
     color: #0D0D3D;
 }
@@ -387,7 +447,7 @@ body
 
 .articleLinkText
 {   font-size: 1.5em;
-    color: #CFCEEB;
+    color: #9B9BB0;
     font-family: 'Oswald', sans-serif;
     text-decoration: none;
 }
@@ -396,15 +456,23 @@ body
 {   animation: popout 0.3s forwards;
     color: #0D0D3D;
 }
+
 #authorName {
     text-align: center;
     font-family: 'Oswald', sans-serif;
+    font-size: 1.75em;
+    color: #0D0D3D;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 #imageHolder {
     width: 100vw;
     height: 25vh;
     object-fit: cover;
     object-position: top;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 512px)
@@ -414,7 +482,7 @@ body
         letter-spacing: 3px;
     }
 
-    #aboutUsCard
+    .aboutUsCard
     {   max-width: 90%;
 
     }
@@ -450,6 +518,18 @@ body
 
     .card
     {   width: 90%;   }
+
+    #articleHeader
+    {   display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        row-gap: 20px;
+        /* column-gap: 10px; */
+        /* align-items: center; */
+    }
 /*
     .articleHeaderLine
     {   display: none;
@@ -472,6 +552,11 @@ body
     {   font-size: 32px;
         -webkit-text-stroke: 2px #CFCEEB;
         letter-spacing: 2px;
+    }
+
+    #articleHeading
+    {   font-size: 1.75em;
+
     }
 }
 /* body {
@@ -515,7 +600,7 @@ header {
     color: #A3C3D9;
     font-size: 0.9rem;
     margin: 10px 0;
-}
+p}
 footer {
     background-color: #A3C3D9;
     color: #fff;
