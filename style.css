@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
 
+body{
+    overflow-x: hidden;
+}
+
 @keyframes fadein
 {   from {opacity: 0;}
     to {opacity: 1;}
@@ -15,10 +19,9 @@
 body
 {   margin: 0;
     padding: 0;
-    background-color: #A3C3D9;
 }
 
-.paragraphText, p
+.paragraphText
 {   font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
     color: #7d7d7d;
@@ -87,11 +90,12 @@ body
 {   font-family: 'Oswald', sans-serif;
     color: transparent;
     -webkit-text-stroke: 3px #CFCEEB;
-    letter-spacing: 6px;
+    letter-spacing: 5px;
     font-size: 72px;
     animation: fadein 2s;
     user-select: none;
     text-transform: uppercase;
+    text-align: center;
     text-align: center;
 }
 
@@ -111,9 +115,27 @@ body
 {   background-color: #CFCEEB;
     width: 100%;
     height: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contentLine
+{   width: 85%;
+    color: #17166E;
+    border: 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contentH2
+{   font-family: 'Oswald', sans-serif;
+    color: #17166E;
+    font-size: 2.25em;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 #articleContainer
@@ -122,6 +144,7 @@ body
     max-width: 85%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 25px;
     column-gap: 25px;
     row-gap: 50px;
     padding: 25px;
@@ -140,7 +163,9 @@ body
 }
 
 .card:hover
-{   animation: popout 0.3s forwards;   }
+{   animation: popout 0.3s forwards;
+    filter: brightness(110%);
+}
 
 .sectionHeader
 {   font-family: 'Oswald', sans-serif;
@@ -153,10 +178,48 @@ body
     color: #2d2d2d;
 }
 
+#section1HeaderWrapper
+{   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('src/ocean.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section2HeaderWrapper
+{   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('src/watermoleculebg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section3HeaderWrapper
+{   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('src/canal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .sectionContent
 {   width: 90%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.sectionLinkText
+{   font-family: 'Oswald', sans-serif;
+    color: #17166E;
+    text-align: center;
+    font-size: 2em;
+}
+
+.sectionLinkText:hover
+{   animation: popout 0.3s forwards;
+    font-weight: bold;
+}
+
+.sectionLinkContainer
+{   column-gap: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    justify-content: space-evenly;
 }
 
 .cardLine
@@ -176,6 +239,8 @@ body
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
     user-select: none;
+    object-fit: cover;
+    object-position: 50% 50%;
     /* border-radius: 5px; */
 }
 
@@ -220,20 +285,19 @@ body
     background-color: white;
 }
 
-#aboutUsCard {
+.aboutUsCard {
     background-color: #0D0D3D;
     height: 500px;
     width: 400px;
     overflow-y: scroll;
-}
-
-#layout
-{   border-radius: 5px;
+    border-radius: 5px;
+    padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
 }
 
-#aboutUsContainer {
-    padding-top: 100px;
+#aboutUsContainer
+{   padding-top: 100px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -241,20 +305,46 @@ body
     align-content: space-between;
 }
 
-#aboutUsCardHeading {
-    font-family: 'Oswald', sans-serif;
+.aboutUsCardHeading
+{   font-family: 'Oswald', sans-serif;
     text-align: center;
-    font-size: 1.25rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.25em;
     color: #CFCEEB;
     /* text-decoration: underline; */
 }
 
-#aboutUsCardContent {
+.aboutUsCardImg
+{   max-width: 60%;
+    border-radius: 3px;
+    border: solid 3px #CFCEEB;
+}
+
+.aboutUsCardLine
+{   width: 90%;
+    /* margin-top: 10px; */
+    margin-bottom: 35px;
+    border: solid #CFCEEB 1.25px;
+}
+
+.aboutUsCardContent {
     text-align: center;
     word-wrap: break-word;
-    font-family: "Luxurious Script", cursive;
-    font-size: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /* font-family: "Luxurious Script", cursive; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75em;
     color: #CFCEEB;
+}
+
+.quoteStyle
+{   font-family: 'Oswald', sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
 }
 
 #footerWrapper
@@ -305,12 +395,112 @@ body
     list-style: url('src/water-favicon-reduced.png');
 }
 
+#articleHeader
+{   display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 300px 1fr;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.articleHeaderLine
+{   width: 95%;
+    height: 0px;
+    border: solid 4px #0D0D3D;
+}
+
+.articleLine
+{   width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px #0D0D3D;
+}
+
+#articleHeading
+{   font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    font-size: 2.5em;
+    text-align: center;
+    color: #0D0D3D;
+}
+
+#articleContent
+{   max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+#articleLinkWrapper
+{   column-gap: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+}
+
+.articleLinkText
+{   font-size: 1.5em;
+    color: #9B9BB0;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+
+.articleLinkText:hover
+{   animation: popout 0.3s forwards;
+    color: #0D0D3D;
+}
+
+#authorName {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.75em;
+    color: #0D0D3D;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#imageHolder {
+    width: 100vw;
+    height: 25vh;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
 @media screen and (max-width: 512px)
 {   #headerH1
     {   font-size: 96px;
         -webkit-text-stroke: 4px #CFCEEB;
         letter-spacing: 3px;
+    }
+
+    .aboutUsCard
+    {   max-width: 90%;
+
+    }
+
+    #articleHeader
+    {   grid-template-columns: 1fr 150px 1fr;
+
+    }
+
+    #articleContent
+    {   max-width: 85vw;
+
+    }
+
+    .aboutUsCardImg
+    {   max-width: 90%;
+        border-radius: 3px;
     }
 }
 
@@ -322,13 +512,40 @@ body
     }
 
     #sectionHeaderH1
-    {   font-size: 48px;
+    {   font-size: 32px;
         -webkit-text-stroke: 2px #CFCEEB;
         letter-spacing: 2px;
     }
 
     .card
     {   width: 90%;   }
+
+    #articleHeader
+    {   display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        row-gap: 20px;
+        /* column-gap: 10px; */
+        /* align-items: center; */
+    }
+/*
+    .articleHeaderLine
+    {   display: none;
+        border: none;
+    } */
+
+    /* .articleHeader
+    {   display: block;
+
+    } */
+
+    /* #articleHeading
+    {   margin-left: auto;
+        margin-right: auto;
+    } */
 }
 
 @media screen and (max-width: 250px)
@@ -338,9 +555,17 @@ body
         letter-spacing: 2px;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8400ebfd4f71c48fd9875af42ccb45bc185d5b7a
 }
 =======
+=======
+
+    #articleHeading
+    {   font-size: 1.75em;
+
+    }
+>>>>>>> f426f2a873fe4bef8ec6f55aee244544f57fadbb
 }
 /* body {
     font-family: Arial, sans-serif;
@@ -383,7 +608,7 @@ header {
     color: #A3C3D9;
     font-size: 0.9rem;
     margin: 10px 0;
-}
+p}
 footer {
     background-color: #A3C3D9;
     color: #fff;
