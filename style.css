@@ -15,6 +15,7 @@ body{
     to {transform: scale(1.1);}
 }
 
+
 body
 {   margin: 0;
     padding: 0;
@@ -24,6 +25,7 @@ body
 {   font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
     color: #7d7d7d;
+    overflow-wrap: break-word;
 }
 
 .numStyle
@@ -499,7 +501,7 @@ body
 .articleImage
 {   border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    max-width: 50%;
+    max-width: 45%;
 }
 
 .imageCaption
@@ -614,11 +616,18 @@ body
         -webkit-text-stroke: 2px #CFCEEB;
         letter-spacing: 2px;
     }
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8400ebfd4f71c48fd9875af42ccb45bc185d5b7a
+}
+=======
+=======
 
     #articleHeading
     {   font-size: 1.75em;
 
     }
+>>>>>>> f426f2a873fe4bef8ec6f55aee244544f57fadbb
 }
 /* body {
     font-family: Arial, sans-serif;
@@ -670,3 +679,4 @@ footer {
     margin-top: 20px;
 }
  */
+>>>>>>> c78bd540ebd976bfd3458477e0b10712dccb3fa1
