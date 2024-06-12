@@ -22,7 +22,7 @@ body
 }
 
 .paragraphText
-{   font-size: 1.1rem;
+{   font-size: 1.3rem;
     font-family: 'Roboto', sans-serif;
     color: #7d7d7d;
     overflow-wrap: break-word;
@@ -296,6 +296,7 @@ body
     padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-sizing: border-box;
+    scrollbar-color: #CFCEEB;
 }
 
 #aboutUsContainer
@@ -476,7 +477,7 @@ body
 
 .articleSubHeader
 {   color: #0D0D3D;
-    font-size: 1.45em;
+    font-size: 1.8em;
     font-family: 'Oswald', sans-serif;
 }
 
